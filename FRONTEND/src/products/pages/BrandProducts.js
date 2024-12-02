@@ -16,7 +16,7 @@ const BrandProducts = () => {
     const fetchProducts = async () => {
       try {
         const responseData = await sendRequest(
-          `http://localhost:5000/api/products/brand/${brandId}`
+          `https://brands-product-management-backend.onrender.com/api/products/brand/${brandId}`
         );
         setLoadedProducts(responseData.products);
       } catch (err) {}
