@@ -139,6 +139,7 @@ const Auth = () => {
               onInput={inputHandler}
             />
           )}
+                {isLoginMode && (<p>mock login credentials: email: s@s.com pass:123456</p>)}
           <Input
             element="input"
             id="email"
