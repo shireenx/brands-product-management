@@ -40,7 +40,7 @@ const UpdateProduct = () => {
     const fetchProduct = async () => {
       try {
         const responseData = await sendRequest(
-          `http://localhost:5000/api/products/${productId}`
+          `https://brands-product-management-backend.onrender.com/api/products/${productId}`
         );
         setLoadedProduct(responseData.product);
         setFormData(
@@ -66,7 +66,7 @@ const UpdateProduct = () => {
     event.preventDefault();
     try {
       await sendRequest(
-        `http://localhost:5000/api/products/${productId}`,
+        `https://brands-product-management-backend.onrender.com/api/products/${productId}`,
         'PATCH',
         JSON.stringify({
           title: formState.inputs.title.value,
