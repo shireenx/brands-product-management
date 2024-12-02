@@ -70,7 +70,7 @@ const Auth = () => {
     if (isLoginMode) {
       try {
         const responseData = await sendRequest(
-          'http://localhost:5000/api/brands/login',
+          'https://brands-product-management-backend.onrender.com/api/brands/login',
           'POST',
           JSON.stringify({
             email: formState.inputs.email.value,
@@ -91,7 +91,7 @@ const Auth = () => {
         formData.append('image', formState.inputs.image.value);
         formData.append('b_description', formState.inputs.b_description.value);
         const responseData = await sendRequest(
-          'http://localhost:5000/api/brands/signup',
+          'https://brands-product-management-backend.onrender.com/api/brands/signup',
           'POST',
           formData
         );
