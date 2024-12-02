@@ -49,7 +49,7 @@ app.use((error, req, res, next) => {
 
 mongoose
   .connect(
-    `mongodb+srv://shireen:shireen@cluster0.oqtsbvw.mongodb.net/mern_bp?retryWrites=true&w=majority&appName=Cluster0`
+    MONGO_URI
   )
   .then(() => {
     app.listen(process.env.PORT || 5000);
