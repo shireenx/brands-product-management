@@ -13,7 +13,7 @@ const Brands = () => {
     const fetchBrands = async () => {
       try {
         const responseData = await sendRequest(
-          'http://localhost:5000/api/brands'
+          'https://brands-product-management-backend.onrender.com/api/brands'
         );
         console.log(responseData.brands);
         setLoadedBrands(responseData.brands);
