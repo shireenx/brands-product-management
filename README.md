@@ -1,5 +1,7 @@
 This project is a MERN stack web application that allows users to manage brands and products. Users can perform CRUD operations on products and brands, with authentication enforced using JWT (JSON Web Tokens). The application also supports file uploads with Multer, search functionality, and uses local storage for storing authentication tokens.
 Technologies Used
+# view live website here
+https://brands-product-management-frontend.onrender.com/
 # Frontend:
 React, React Router, Context API
 # Backend:
@@ -57,5 +59,24 @@ Displays appropriate error messages for missing or invalid inputs.
 Global Error Handling: Catches and handles errors gracefully both on the client and server side.
 # 8. CORS Configuration
 Cross-Origin Resource Sharing (CORS) is enabled to allow frontend requests from different origins (e.g., localhost:3000 accessing an API running on localhost:5000).
-# view live website here
-https://brands-product-management-frontend.onrender.com/
+# Getting Started
+1. Clone the Repository:
+git clone <repository-url>
+cd project-directory
+2. Set Up the Backend:
+Navigate to the backend folder:
+cd backend
+Install backend dependencies:
+npm install
+Create a .env file in the backend directory with the following:
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/mern_bp?retryWrites=true&w=majority
+JWT_SECRET=your_jwt_secret_key
+PORT=5000
+Start the backend server:
+npm start
+3. Set Up the Frontend:
+Navigate to the frontend folder:
+cd frontend
+Install frontend dependencies:
+npm install
+npm start
